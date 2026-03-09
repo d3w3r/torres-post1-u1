@@ -2,10 +2,10 @@ package com.patrones.u1;
 
 import java.util.List;
 
-public class TaxtCalculator {
+public class TaxCalculator {
     private final double taxRate;
 
-    public TaxtCalculator(double taxRate) {
+    public TaxCalculator(double taxRate) {
         this.taxRate = taxRate;
     }
 
