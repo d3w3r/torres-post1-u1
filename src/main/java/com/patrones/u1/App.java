@@ -1,14 +1,19 @@
 package com.patrones.u1;
 
+import com.patrones.u1.entities.*;
+import com.patrones.u1.services.OrderService;
+import com.patrones.u1.entities.discounts.VipDiscount;
+import com.patrones.u1.entities.discounts.RegularDiscount;
+
 import java.util.List;
 
 public class App
 {
     public static void main( String[] args ) {
-        OrderRepository repo        = new OrderRepository();
-        EmailNotifier   notifier    = new EmailNotifier();
-        TaxCalculator   calc        = new TaxCalculator(0.19);
-        OrderReport     reporter    = new OrderReport();
+        OrderRepository repo    = new OrderRepository();
+        EmailNotifier notifier  = new EmailNotifier();
+        TaxCalculator calc      = new TaxCalculator(0.19);
+        OrderReport reporter    = new OrderReport();
 
         // Orden con cliente VIP
         OrderService vipService = new OrderService(calc, notifier, repo,

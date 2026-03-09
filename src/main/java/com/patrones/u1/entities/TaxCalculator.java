@@ -1,4 +1,4 @@
-package com.patrones.u1;
+package com.patrones.u1.entities;
 
 import java.util.List;
 

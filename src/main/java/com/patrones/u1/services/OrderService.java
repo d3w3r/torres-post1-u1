@@ -1,18 +1,23 @@
-package com.patrones.u1;
+package com.patrones.u1.services;
+
+import com.patrones.u1.entities.EmailNotifier;
+import com.patrones.u1.entities.TaxCalculator;
+import com.patrones.u1.entities.OrderRepository;
+import com.patrones.u1.entities.discounts.DiscountStrategy;
 
 import java.util.List;
 
 public class OrderService {
-    private final TaxCalculator     taxCalculator;
-    private final EmailNotifier     emailNotifier;
-    private final OrderRepository   orderRepository;
-    private final DiscountStrategy  discountStrategy;
+    private final TaxCalculator taxCalculator;
+    private final EmailNotifier emailNotifier;
+    private final OrderRepository orderRepository;
+    private final DiscountStrategy discountStrategy;
 
     // Inyeccion por constructor - DIP aplicado
     public OrderService(
             TaxCalculator       taxCalculator,
             EmailNotifier       emailNotifier,
-            OrderRepository     orderRepository,
+            OrderRepository orderRepository,
             DiscountStrategy    discountStrategy
     ) {
         this.taxCalculator      = taxCalculator;

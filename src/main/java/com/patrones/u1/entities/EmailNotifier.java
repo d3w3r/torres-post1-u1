@@ -1,4 +1,4 @@
-package com.patrones.u1;
+package com.patrones.u1.entities;
 
 public class EmailNotifier {
     public void sendConfirmation (String email, String orderId) {

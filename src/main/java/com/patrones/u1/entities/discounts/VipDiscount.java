@@ -1,4 +1,4 @@
-package com.patrones.u1;
+package com.patrones.u1.entities.discounts;
 
 public class VipDiscount implements DiscountStrategy {
     @Override
