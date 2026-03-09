@@ -15,3 +15,4 @@ Luego de tener el repositorio instalado y listo para la ejecucion debemos ejecut
 3. Ejecucion del proyecto `mvn exec:java -Dexec.mainClass=com.patrones.u1.App`.
 
 ## Resultados
+<img width="820" height="466" alt="image" src="https://github.com/user-attachments/assets/8efd6243-8d7d-433a-8aca-b01af3506863" />
